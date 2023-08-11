@@ -24,7 +24,7 @@ func handleRequests() {
 }
 
 func getArticles(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(articles)
+	_ = json.NewEncoder(w).Encode(articles)
 }
 
 func homePage(w http.ResponseWriter, r *http.Request) {
